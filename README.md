@@ -2,11 +2,11 @@
 
 This plugin gives the user ability to:
 
-1. Make a list of forms with hierachical structure
+1. Make a list of forms with hierarchical structure
 2. clone a section of a form
 3. destroy a section of a form
-4. indent a section of a form to assign / show the hierachical levels
-5. outdent a section of a form to assign / show the hierachical levels
+4. indent a section of a form to assign / show the hierarchical levels
+5. outdent a section of a form to assign / show the hierarchical levels
 
 Every update on the forms will update each section with unique IDs, names, and labels to maintain accessibility and work with the database.
 
