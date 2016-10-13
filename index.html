@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Input for Sub Tasks</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		
+	</head>
+	<body>
+		<!-- Navigation Starts -->
+	    <div class="row">
+	        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	            </div>
+	            <div class="collapse navbar-collapse" id="collapse">
+	            	<ul class="nav navbar-nav">
+	                	<li><a href="http://home.tobeneo.com/Comprehensive-Intro">Home</a></li>
+	                	<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Software Interface for Teachers <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="http://home.tobeneo.com/Comprehensive-Problem-Statement/">Input for Problem Statement</a></li>
+								<li role="separator" class="divider"></li>
+								<li class="active"><a>Input for Sub Tasks</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="http://home.tobeneo.com/Comprehensive-Input-Code/">Input for Code Structure</a></li>
+							</ul>
+				        </li>
+	                	<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Software Interface for Students <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="http://home.tobeneo.com/Comprehensive-Sample1/">Sample Problem 1</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="http://home.tobeneo.com/Comprehensive-Sample2/">Sample Problem 2</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="http://home.tobeneo.com/Comprehensive-Sample3/">Sample Problem 3</a></li>
+							</ul>
+				        </li>
+	                </ul>
+	            </div>  
+	        </nav>
+	    </div>
+	    <!-- Navigation Ends -->
+
+		<div class="container">
+			<h2>Your Problem</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tortor sapien. Aenean non felis vitae risus malesuada porta sodales eget orci. Pellentesque tristique viverra dui eget suscipit. Morbi vehicula quis ante sit amet porta. Suspendisse ornare nulla ut sollicitudin volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non leo varius, dignissim ipsum sed, finibus nibh. Nam ac magna ac ante blandit mollis. Cras convallis vehicula malesuada. In vulputate rhoncus odio vestibulum vestibulum. </p>
+			<p>Phasellus auctor mi dolor, ut euismod felis commodo eget. Vivamus vel nulla quis dolor aliquet varius. Etiam tempor gravida neque, vel pretium ipsum dapibus ac. Sed eget vulputate augue. Integer at tristique urna. Pellentesque eget justo id orci sodales porttitor in ut ante. Donec scelerisque placerat magna non varius. Nulla facilisi. Sed volutpat sem ac sollicitudin tincidunt. Sed lorem felis, varius nec euismod eu, convallis a neque. Nam laoreet sollicitudin justo id euismod. Cras fringilla sem vel ex ullamcorper convallis. Integer eu molestie augue, eget condimentum mi. Sed quis viverra diam, in ullamcorper velit. Ut suscipit orci et tortor vulputate convallis.</p>
+		</div>
+
+		<div id="taskLayers">
+			<form class="form-horizontal" id="theForm">
+			<div class="task-block" id="0taskBlock">
+				<div class="form-group">
+				  	<div class="col-sm-2">
+				  		<button type="button" class="btn btn-default to-Left">
+						  <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+						</button>
+						<button type="button" class="btn btn-default to-Right">
+						  <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+						</button>
+				  	</div>
+				    <label class="col-sm-1 control-label">Task</label>
+				    <div class="col-sm-7">
+				      <input type="text" class="form-control input-task" id="0task" name="0task" placeholder="Task" required="required">
+				    </div>
+				    <div class="col-sm-1">
+						<button type="button" class="btn btn-default add">
+						  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+						</button>
+				    </div>
+				    <div class="col-sm-1">
+						<button type="button" class="btn btn-default delete">
+						  <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+						</button>
+				    </div>
+				</div>
+				<div class="form-group">
+				  	<div class="col-sm-1"></div>
+				    <label class="col-sm-4 control-label">1. Useful Search Link: </label>
+				    <div class="col-sm-5">
+				      <input type="text" class="form-control input-link" id="0link" name="0link" placeholder="Link">
+				    </div>
+				</div>
+				<div class="form-group">
+				  	<div class="col-sm-1"></div>
+				    <label class="col-sm-4 control-label">2. Code Sample Link: </label>
+				    <div class="col-sm-5">
+				      <input type="text" class="form-control input-code" id="0code" name="0code" placeholder="Code link">
+				    </div>
+				</div>
+				<div class="form-group">
+				    <input type="hidden" class="form-control input-level" name="0level" value="0">
+				</div>
+			</div>
+
+
+			  <div class="form-group">
+			    <div class="col-sm-offset-8 col-sm-4">
+			      <button type="submit" class="btn btn-success" id="submit">Submit</button>
+			    </div>
+			  </div>
+			</form>
+		</div>
+
+	<div id="footer">
+		<hr>
+		<p>
+			Created by <a class="samples" href="http://tobeneo.com">Qiang Hao</a>; Powered by <a class="samples" href="http://getbootstrap.com/">&copy; BootStrap</a>
+		</p>
+	</div>
+
+	<script src="jquery/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+	</body>
+</html>

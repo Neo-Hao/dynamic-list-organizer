@@ -1,0 +1,22 @@
+.container{
+	margin: 4% auto;
+}
+
+#taskLayers {
+	width: 70%;
+	margin-top: 2%;
+	margin-left: 20%;
+}
+
+.task-block{
+	width: 70%;
+}
+
+.directionControl {
+	float: right;
+}
+
+#footer{
+	width: 90%;
+	margin: 2% auto;
+}
